@@ -1,0 +1,54 @@
+.swiper-slide {
+  padding-bottom: 50px;
+  
+  
+}
+.FirstSlider {
+  position: relative;
+  margin: 0;
+
+  @media (max-width: 480px) {
+    position: absolute;
+    top: 200px;
+    background-color: #f1f5f3;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #302d2d;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #4c62fd; /* აირჩიე შენი ფერი */
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* Active dot */
+.swiper-pagination-bullet-active {
+  background-color: #ffffff; /* აირჩიე შენი ფერი */
+}
+.SecondSlider {
+  padding-bottom: 50px;
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #141625;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #4c62fd; /* აირჩიე შენი ფერი */
+  }
+}

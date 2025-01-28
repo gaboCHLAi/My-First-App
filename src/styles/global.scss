@@ -1,0 +1,40 @@
+* {
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// Defining breakpoints as SCSS variables
+$xxl:1920px;
+$xl: 1440px;
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 480px;
+
+body {
+  font-size: 16px;
+
+  @media (max-width: $xxl) {
+    font-size: 18px;
+  }
+  // Large Screens (XL)
+  @media (max-width: $xl) {
+    font-size: 16px;
+  }
+
+  // Desktop Screens
+  @media (max-width: $desktop) {
+    font-size: 15px;
+  }
+  
+  // Tablet Screens
+  @media (max-width: $tablet) {
+    font-size: 14px  ;
+  }
+  
+  // Mobile Screens
+  @media (max-width: $mobile) {
+    font-size: 12px;
+  }
+}

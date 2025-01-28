@@ -1,0 +1,13 @@
+.vertical-line .box {
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000; /* საწყისი წითელი ფერი */
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* გლუვი ცვლილება */
+  }
+  
+  .vertical-line .box.active {
+    background-color: #00ff00; /* აქტიური ფერი - მწვანე */
+  }
+  

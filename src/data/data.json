@@ -1,0 +1,84 @@
+{
+  "mainTitle" : {
+   "title": "Trading CFDs and FX Options entail risk and could result in the loss of your capital."
+  },
+  "firstSliderCards": [
+    {
+      "id": 1,
+      "title": "Bitcoin",
+      "description": "text",
+      "img": "Icon.png",
+      "number": "422.00",
+      "percentage": "+13.57(3.32%)"
+    },
+    {
+      "id": 2,
+      "title": "Ethereum",
+      "description": "text",
+      "img": "Clip path group.png",
+      "number": "422.00",
+      "percentage": "+13.57(3.32%)"
+    },
+    {
+      "id": 3,
+      "title": "Litecoin",
+      "description": "text",
+      "img": "Group 3983.png",
+      "number": "422.00",
+      "percentage": "+13.57(3.32%)"
+    },
+    {
+      "id": 4,
+      "title": "Card 4",
+      "description": "text",
+      "img": "Icon.png",
+      "number": "422.00",
+      "percentage": "+13.57(3.32%)"
+    },
+    {
+      "id": 5,
+      "title": "Card 5",
+      "description": "text",
+      "img": "Icon.png",
+      "number": "422.00",
+      "percentage": "+13.57(3.32%)"
+    }
+  ],
+  "secondSliderCards": [
+    {
+      "id": 11,
+      "title": "Tremendous Support",
+      "paragraph": "I have found the support to be  tremendous. the service has been simultaneously professional and friendly.",
+
+      "name": "Nadumiso M."
+    },
+    {
+      "id": 12,
+      "title": "Tremendous Support",
+      "paragraph": "I have found the support to be  tremendous. the service has been simultaneously professional and friendly.",
+
+      "name": "Nadumiso M."
+    },
+    {
+      "id": 13,
+      "title": "Tremendous Support",
+      "paragraph": "I have found the support to be  tremendous. the service has been simultaneously professional and friendly.",
+
+      "name": "Nadumiso M."
+    },
+    {
+      "id": 14,
+      "title": "Tremendous Support",
+      "paragraph": "I have found the support to be  tremendous. the service has been simultaneously professional and friendly.",
+
+      "name": "Nadumiso M."
+    },
+    {
+      "id": 15,
+      "title": "Tremendous Support",
+      "paragraph": "I have found the support to be  tremendous. the service has been simultaneously professional and friendly.",
+
+      "name": "Nadumiso M."
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+
+header {
+  .Warning {
+    background-color: #101820;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+
+    .text {
+      color: white;
+      margin: 0;
+    }
+  }
+
+  .head {
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+
+    img {
+      max-height: 40px;
+    }
+
+    
+  }
+
+  .firstSection {
+    background-image: url("../../assets/images/main.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    .introduction   {
+       
+        p:nth-of-type(1) {
+        color: #ffffff;
+        font-size: 45px;
+        margin-bottom: 0;
+         
+      }
+      p:nth-of-type(2) {
+        color: #ffffff;
+        font-size: 45px;
+        margin-bottom: 0;
+        
+      }
+
+      p:nth-of-type(3) {
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+      button {
+        width: 188px;
+        height: 58px;
+        color: #ffffff;
+        background-color: #ff5100;
+        border-style: none;
+        margin-top: 20px;
+        font-size: 18px;
+       
+      }
+    }
+  }
+
+  // === Media Queries for Responsiveness ===
+
+  @media (max-width: 1440px) {
+    .main_container {
+      .Warning {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main_container {
+      .Warning {
+        p {
+          font-size: 0.875rem;
+        }
+      }
+      .space_around {
+        .head {
+          img {
+            max-height: 25px;
+          }
+        }
+      }
+
+      .container {
+        .introduction {
+          padding: 20px 15px;
+
+          p:nth-of-type(1) {
+            font-size: 20px;
+          }
+          p:nth-of-type(2) {
+            font-size: 12px;
+          }
+
+          button {
+            width: 120px;
+            height: 36px;
+            font-size: 12px;
+          }
+        }
+
+        .first-slider {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .Warning {
+      position: relative;
+      width: 100%;
+      height: 30px;
+      background-color: #101820;
+      transition: transform 0.3s ease;
+  
+      &::before {
+        content: "+";
+        font-size: 30px;
+        font-weight: 700;
+        color: #4c62fd;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s ease;
+        z-index: 1;
+      }
+  
+      &::after {
+        content: " ";
+        position: absolute;
+        bottom: -16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        border-top: 16px solid #101820;
+        transition: transform 0.3s ease;
+      }
+  
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+  
+    .text {
+      font-size: 0.75rem;
+      transition: all 0.3s ease;
+    }
+  
+    .expanded {
+      white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 310px;
+      transition: all 0.3s ease;
+    }
+    .head{
+      button {
+        width: 117px;
+        height: 28px;
+        font-size: 14px;
+      }
+    }
+    .firstSection {
+      background-image: url("../../assets/images/Image_mobile\ 1.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+        /* სრული სიგანე */
+      
+        .introduction   {
+       
+          p:nth-of-type(1) {
+            color: #ffffff;
+            font-size: 37px;
+             
+          }
+          p:nth-of-type(2) {
+            color: #ffffff;
+            font-size: 37px;
+            
+          }
+    
+          p:nth-of-type(3) {
+            color: #ffffff;
+            font-size: 18px;
+          } 
+  
+        button {
+          width: 188px;
+          height: 58px;
+          color: #ffffff;
+          background-color: #ff5100;
+          border-style: none;
+          margin-top: 20px;
+          font-size: 15px;
+         
+        }
+      }
+    }
+  }
+
+}  

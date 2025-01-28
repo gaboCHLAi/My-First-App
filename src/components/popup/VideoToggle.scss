@@ -1,0 +1,53 @@
+/* ძირითადი სტილი დივისთვის, რომელიც მიანიშნებს ვიდეოზე */
+.video-toggle {
+  width: 636px;
+  height: 337px;
+  background-color: #010407;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 30%); /* შენახული ფორმა */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.video-toggle:hover {
+  /* აქ შეგიძლია დაამატო ანიმაცია, როცა მეჩეხება */
+}
+
+/* სურათის კონტეინერი */
+.image-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* სურათის ზომა */
+.video-preview-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ვიდეო კონტეინერის სტილი */
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* ნაკლები გამჭვირვალობა */
+  z-index: 1 ;
+}
+
+/* ვიდეოს ზომა */
+video {
+  width: 100%; /* ვიდეოს განზომილება მიადვილებს დივის ზომის მოშარდვას */
+  height: 100%;
+  object-fit: cover; /* ეს ეცდება მოერგოს დივს, არ შეიცვლება მისი ასპექტი */
+    
+}
+  

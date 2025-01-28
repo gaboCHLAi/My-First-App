@@ -1,0 +1,41 @@
+.mainContainer{
+    background-color: #FFFFFF;
+    height: auto;
+    margin-top: 64px;
+
+    .poo{
+        p:nth-of-type(1){
+            color: #4c62fd;
+            font-size: 40px;
+            text-align: center;
+        }
+        p:nth-of-type(2) {
+            color: #13131f;
+            font-size: 40px;
+            text-align: center;
+        }
+        p:nth-of-type(3){
+            color: #13131f;
+            font-size: 16px;
+            margin-top: 13px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    }
+     
+    
+}
+.LastContainer{
+    button{
+        width: 250px;
+        height: 58px;
+        background-color: #FF5100;
+        color: #fff; 
+        font-size: 18px;
+        margin-bottom: 30px;
+
+        &:hover{
+            background-color: #ec6526;
+        }
+    }
+}

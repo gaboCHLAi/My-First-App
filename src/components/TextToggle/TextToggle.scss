@@ -1,0 +1,28 @@
+.text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.text.expanded {
+  white-space: normal;
+  width: auto;
+}
+
+.toggle-button {
+  display: none; /* By default, hide button */
+
+  @media (max-width: 480px) {
+    display: inline-block; /* Show button only on screens less than or equal to 480px */
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    white-space: normal; /* Allow the text to wrap on smaller screens */
+    width: 100%; /* Make text take full width */
+  }
+}

@@ -1,0 +1,167 @@
+.hero {
+  .main-container {
+    .firstOne {
+      background-image: url("../../assets/images/Block1_bg\ 1.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%; /* სექცია ეკრანის სიგანეს მოერგება */
+      
+      .introduction {
+        
+
+        p:first-of-type {
+          color: #4c62fd; /* პირველი პარაგრაფის ფერი */
+          font-size: 40px;
+          margin-bottom: 14px;
+        }
+        p:nth-of-type(2) {
+          color: #180d0d; /* მეორე პარაგრაფის ფერი */
+          font-size: 17px;
+        }
+
+        button {
+          width: 190px;
+          height: 58px;
+          color: #ffffff;
+          background-color: #ff5100;
+          border-style: none;
+          margin-top: 20px;
+          font-size: 18px;
+        }
+      }
+    }
+    .secondOne {
+      height: auto;
+      background-image: url("../../assets/images/Bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .title {
+        p:first-of-type {
+          font-size: 29px;
+          color: #ffffff;
+          text-align: center;
+          margin-bottom: 13px;
+        }
+        p:nth-of-type(2) {
+          color: #ffffff;
+          text-align: center;
+        }
+      }
+      .leftSide {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+
+        .block {
+          display: flex;
+          height: 101px;
+
+          .Title {
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+          .active {
+            color: #4c62fd;
+          }
+        }
+        .vertical-line {
+          width: 2px;
+          background-color: #ffffff;
+          margin-right: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &.active {
+            background-color: #4c62fd;
+          }
+
+          .box {
+            width: 19px;
+            height: 19px;
+            background-color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* გლუვი ცვლილება */
+          }
+
+          .active {
+            background-color: #4c62fd;
+          }
+        }
+      }
+      button {
+        width: 166px;
+        height: 45px;
+        border-color: yellowgreen;
+        color: yellowgreen;
+        font-weight: 600;
+        background: none;
+        margin-top: 50px;
+      }
+      button:nth-of-type(1) {
+        margin-right: 23px;
+      }
+    }
+    .third {
+      background-color: #e3e3eb;
+      width: 100%;
+      height: auto;
+
+      .CountryName {
+        color: #4c62fd;
+        font-size: 20px;
+      }
+      p {
+        color: #13131f;
+        font-size: 14px;
+      }
+      .introduction {
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 36px;
+
+        :nth-of-type(1) {
+          color: #4c62fd;
+          font-size: 40px;
+        }
+        :nth-of-type(2) {
+          color: #13131f;
+          font-size: 40px;
+        }
+        :nth-of-type(3) {
+          color: #13131f;
+          font-size: 18px;
+        }
+        h1 {
+          color: #4c62fd;
+        }
+      }
+
+      .sideForCountry {
+        button {
+          margin-top: 40px;
+          background-color: #ff5100;
+          margin-bottom: 50px;
+        }
+        .sideBySide {
+          display: flex;
+          margin-bottom: 20px;
+
+          img {
+            margin-right: 5px;
+            width: 44px;
+            height: 44px;
+          }
+        }
+      }
+    }
+  }
+}
