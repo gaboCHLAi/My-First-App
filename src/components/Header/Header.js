@@ -48,7 +48,7 @@ const Header = (props) => {
               </div>
             </div>
           </div>
-          <div className="pt-5 position-relative  ">
+          <div className="pt-5    ">
             <Swiper
               customClass="first-slider"
               cards={data.firstSliderCards}

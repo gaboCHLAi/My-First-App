@@ -22,7 +22,7 @@ const VideoToggle = () => {
             ref={videoRef}
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/jyXcd_sGd8Q?autoplay=1" // შეცვალეთ VIDEO_ID იმ ვიდეოს ID-ით
+            src="https://www.youtube.com/embed/Vsq1_kewchQ?autoplay=1" // შეცვალეთ VIDEO_ID იმ ვიდეოს ID-ით
             allow="autoplay; encrypted-media"
             allowFullScreen
             title="YouTube Video"
