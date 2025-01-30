@@ -5,13 +5,16 @@ import "./Hero.scss";
 import photo from "../../assets/images/Mobiles2 1 (1).png";
 import img from "../../assets/images/Globe.png";
 import country from "../../assets/images/British Virgin.png";
-const Body = () => {
-  const [activeColor, setActiveColor] = useState(false); // საწყისი ფერი
+import { ThirdSlider } from "../sliders/Swiper";
+import data from "../../data/data.json";
 
-  const handleClick = () => {
-    setActiveColor(!activeColor); // ფერის ცვლილება
+const Body = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleClick = (index) => {
+    setActiveIndex(index === activeIndex ? null : index);
   };
-  const statusClass = activeColor ? "active" : "inactive";
+
   return (
     <section className="hero">
       <div className="main-container ">
@@ -37,213 +40,57 @@ const Body = () => {
             </div>
           </div>
         </div>
-        <div className="secondOne">
-          <div className="title">
+        <div className="secondOne ">
+          <div className="title  p-3 text-center">
             <p>Endless Trading Opportunities Await </p>
             <p>Try our advanced platforms and never miss a trade!</p>
           </div>
-          <div className="leftSide">
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              {" "}
-              <div className="block">
-                <div
-                  className={`vertical-line   ${statusClass}`}
-                  onClick={handleClick}
-                >
-                  <div
-                    className={`box   ${statusClass}`}
-                    onClick={handleClick}
-                  ></div>
-                </div>
-                <div>
-                  <h1
-                    className={`Title   ${statusClass}`}
-                    onClick={handleClick}
-                  >
-                    AvaTradeGo{" "}
-                  </h1>
-                  <p>
-                    Instant and hassle-free access to trading <br />
-                    with no download required{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="block">
-                <div className="vertical-line">
-                  <div className="box"></div>
-                </div>
-                <div>
-                  <h1>AvaTradeGo </h1>
-                  <p>
-                    Instant and hassle-free access to trading <br />
-                    with no download required{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="block">
-                <div className="vertical-line">
-                  <div className="box"></div>
-                </div>
-                <div>
-                  <h1>AvaTradeGo </h1>
-                  <p>
-                    Instant and hassle-free access to trading <br />
-                    with no download required{" "}
-                  </p>
-                </div>
-              </div>
-              <div className="block">
-                <div className="vertical-line">
-                  <div className="box"></div>
-                </div>
-                <div>
-                  <h1>AvaTradeGo </h1>
-                  <p>
-                    Instant and hassle-free access to trading <br />
-                    with no download required{" "}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <button>App Store</button>
-                <button>Play Store</button>
-              </div>
-            </div>
-            <img src={photo} alt="phoneBackground" />
-          </div>
-        </div>
-        <div className="third">
-          <div className="introduction">
-            <p> Regulated Jurisdiction</p>
-            <p>& Global Corporate Presence </p>
-
-            <p>
-              At AvaTrade, traders relish exceptional security and liquidity in
-              their trading pursuits. We voluntarily adhere to regulation
-              <br /> by nine regulatory jurisdictions, ensuring top-tier
-              compliance. Furthermore, our customers have access to a diverse
-              <br /> range of financial instruments, broadening opportunities
-              for successful investments.
-            </p>
-          </div>
-          <div style={{ display: "flex", justifyContent: "space-around" }}>
-            <img
-              alt="globe"
-              src={img}
-              style={{ width: "403px", height: "403px" }}
-            />
-            <div
-              className="sideForCountry"
-              style={{
-                display: " grid",
-                gridTemplateColumns: "auto auto auto",
-              }}
-            >
-              <div style={{ marginLeft: "" }}>
-                <div style={{ marginBottom: "50px" }}>
-                  <div className="sideBySide">
-                    <img src={country} alt="country flag" />{" "}
-                    <div>
-                      <p className="CountryName">British Virgin </p>{" "}
-                      <p>
-                        {" "}
-                        he Financial Futures Association of <br />{" "}
-                        JapanFinancial Services Agency Japan{" "}
-                      </p>{" "}
+          <div className="container">
+            <div className="leftSide row   flex-column-reverse flex-md-row ">
+              <div className="col-12  col-md-6 d-flex justify-content-center d-md-block    ">
+                <div className="d-none d-sm-block">
+                  {[...Array(4)].map((_, index) => (
+                    <div
+                      key={index}
+                      className={`block ${
+                        index === activeIndex ? "active" : ""
+                      }`}
+                      onClick={() => handleClick(index)}
+                    >
+                      <div
+                        className={`vertical-line ${
+                          index === activeIndex ? "active" : ""
+                        }`}
+                      >
+                        <div
+                          className={`box ${
+                            index === activeIndex ? "active" : ""
+                          }`}
+                        ></div>
+                      </div>
+                      <div>
+                        <h1
+                          className={`title ${
+                            index === activeIndex ? "active" : ""
+                          }`}
+                        >
+                          AvaTradeGo
+                        </h1>
+                        <p>
+                          Instant and hassle-free access to trading <br />
+                          with no download required.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="sideBySide">
-                    <img src={country} alt="country flag" />{" "}
-                    <div>
-                      <p className="CountryName">British Virgin </p>{" "}
-                      <p>
-                        {" "}
-                        he Financial Futures Association of <br />{" "}
-                        JapanFinancial Services Agency Japan{" "}
-                      </p>{" "}
-                    </div>
-                  </div>
-                  <div className="sideBySide">
-                    <img src={country} alt="country flag" />{" "}
-                    <div>
-                      <p className="CountryName">British Virgin </p>{" "}
-                      <p>
-                        {" "}
-                        he Financial Futures Association of <br />{" "}
-                        JapanFinancial Services Agency Japan{" "}
-                      </p>{" "}
-                    </div>
-                  </div>
-                  <div className="sideBySide">
-                    <img src={country} alt="country flag" />{" "}
-                    <div>
-                      <p className="CountryName">British Virgin </p>{" "}
-                      <p>
-                        {" "}
-                        he Financial Futures Association of <br />{" "}
-                        JapanFinancial Services Agency Japan{" "}
-                      </p>{" "}
-                    </div>
-                  </div>
-                  <div className="sideBySide">
-                    <img src={country} alt="country flag" />{" "}
-                    <div>
-                      <p className="CountryName">British Virgin </p>{" "}
-                      <p>
-                        {" "}
-                        he Financial Futures Association of <br />{" "}
-                        JapanFinancial Services Agency Japan{" "}
-                      </p>{" "}
-                    </div>
-                  </div>
+                  ))}
                 </div>
-                <PopUp buttonText="Sign Up Today" />
+                  <div className="d-flex justify-content-center justify-content-md-start flex-row flex-nowrap pb-5">
+                    <button>App Store</button>
+                    <button>Play Store</button>
+                  </div>
               </div>
-              <div>
-                <div className="sideBySide">
-                  <img src={country} alt="country flag" />{" "}
-                  <div>
-                    <p className="CountryName">British Virgin </p>{" "}
-                    <p>
-                      {" "}
-                      he Financial Futures Association of <br /> JapanFinancial
-                      Services Agency Japan{" "}
-                    </p>{" "}
-                  </div>
-                </div>
-                <div className="sideBySide">
-                  <img src={country} alt="country flag" />{" "}
-                  <div>
-                    <p className="CountryName">British Virgin </p>{" "}
-                    <p>
-                      {" "}
-                      he Financial Futures Association of <br /> JapanFinancial
-                      Services Agency Japan{" "}
-                    </p>{" "}
-                  </div>
-                </div>
-                <div className="sideBySide">
-                  <img src={country} alt="country flag" />{" "}
-                  <div>
-                    <p className="CountryName">British Virgin </p>{" "}
-                    <p>
-                      {" "}
-                      he Financial Futures Association of <br /> JapanFinancial
-                      Services Agency Japan{" "}
-                    </p>{" "}
-                  </div>
-                </div>
-                <div className="sideBySide">
-                  <img src={country} alt="country flag" />{" "}
-                  <div>
-                    <p className="CountryName">British Virgin </p>{" "}
-                    <p>
-                      {" "}
-                      he Financial Futures Association of <br /> JapanFinancial
-                      Services Agency Japan{" "}
-                    </p>{" "}
-                  </div>
-                </div>
+              <div className="col-12 col-md-6 m-auto  p-0 ">
+                <img src={photo} alt="phoneBackground" className="img-fluid" />
               </div>
             </div>
           </div>

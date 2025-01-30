@@ -9,11 +9,15 @@
   align-items: center;
   cursor: pointer;
   position: relative;
+  transition: transform 0.3s ease;
+   
+
+}
+.video-toggle:hover {
+  transform: scale(1.02); /* ოდნავ გაიზრდება ზომა */
 }
 
-.video-toggle:hover {
-  /* აქ შეგიძლია დაამატო ანიმაცია, როცა მეჩეხება */
-}
+ 
 
 /* სურათის კონტეინერი */
 .image-container {

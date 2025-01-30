@@ -1,11 +1,10 @@
 .swiper-slide {
   padding-bottom: 50px;
-  
-  
 }
 .FirstSlider {
   position: relative;
   margin: 0;
+   
 
   @media (max-width: 480px) {
     position: absolute;
@@ -39,6 +38,20 @@
   background-color: #ffffff; /* აირჩიე შენი ფერი */
 }
 .SecondSlider {
+  padding-bottom: 50px;
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #141625;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #4c62fd; /* აირჩიე შენი ფერი */
+  }
+}
+.thirdSlider {
   padding-bottom: 50px;
   .swiper-pagination-bullet {
     width: 10px;

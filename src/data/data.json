@@ -19,6 +19,7 @@
       "number": "422.00",
       "percentage": "+13.57(3.32%)"
     },
+    
     {
       "id": 3,
       "title": "Litecoin",
@@ -80,5 +81,52 @@
 
       "name": "Nadumiso M."
     }
+  ],
+  "thirdSliderCard" : [
+     {
+      "img" :"Japan.png",
+      "name" : "FFAJT",
+      "description" : "  The Financial Futures Association of JapanFinancial Services Agency Japan"
+     },
+     {
+      "img" :"Japan.png",
+      "name" : "FFAJT",
+      "description" : "  The Financial Futures Association of JapanFinancial Services Agency Japan"
+     },
+     {
+      "img" :"Japan.png",
+      "name" : "FFAJT",
+      "description" : "  The Financial Futures Association of JapanFinancial Services Agency Japan"
+     },
+     {
+      "img" :"Japan.png",
+      "name" : "FFAJT",
+      "description" : "  The Financial Futures Association of JapanFinancial Services Agency Japan"
+     },
+     {
+      "img" :"Japan.png",
+      "name" : "FFAJT",
+      "description" : "  The Financial Futures Association of JapanFinancial Services Agency Japan"
+     },
+     {
+      "img" :"Japan.png",
+      "name" : "FFAJT",
+      "description" : "  The Financial Futures Association of JapanFinancial Services Agency Japan"
+     },
+     {
+      "img" :"Japan.png",
+      "name" : "FFAJT",
+      "description" : "  The Financial Futures Association of JapanFinancial Services Agency Japan"
+     },
+     {
+      "img" :"Japan.png",
+      "name" : "FFAJT",
+      "description" : "  The Financial Futures Association of JapanFinancial Services Agency Japan"
+     },
+     {
+      "img" :"Japan.png",
+      "name" : "FFAJT",
+      "description" : "  The Financial Futures Association of JapanFinancial Services Agency Japan"
+     }
   ]
 }
