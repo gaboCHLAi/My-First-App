@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/your-repository-name/static/css/main.1b141304.css",
+    "main.js": "/your-repository-name/static/js/main.0872f3fa.js",
+    "static/media/main.png": "/your-repository-name/static/media/main.5e66ab82c1bcd169e75d.png",
+    "static/media/Block1_bg 1.png": "/your-repository-name/static/media/Block1_bg 1.028724f6f3a2fd35deb2.png",
+    "static/media/Image_mobile 1.png": "/your-repository-name/static/media/Image_mobile 1.a6bf92a544946fcf7057.png",
+    "static/media/Mobiles2 1 (1).png": "/your-repository-name/static/media/Mobiles2 1 (1).3be7c05e7bf45ae0e5dc.png",
+    "static/media/heaven.png": "/your-repository-name/static/media/heaven.244ff4be7ad5b3f568ad.png",
+    "static/media/Bg.jpg": "/your-repository-name/static/media/Bg.9ba313471ffadba75a6f.jpg",
+    "static/media/Globe.png": "/your-repository-name/static/media/Globe.a70c11edaf59ea4720c8.png",
+    "static/media/A.png": "/your-repository-name/static/media/A.8803ce5b0e681d276530.png",
+    "index.html": "/your-repository-name/index.html",
+    "main.1b141304.css.map": "/your-repository-name/static/css/main.1b141304.css.map",
+    "main.0872f3fa.js.map": "/your-repository-name/static/js/main.0872f3fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b141304.css",
+    "static/js/main.0872f3fa.js"
+  ]
+}
