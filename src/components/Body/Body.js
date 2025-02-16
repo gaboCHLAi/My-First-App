@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import VideoToggle from "../popup/VideoToggle";
-import PopUp from "../popup/PopUp";
+import PopUp from "../popup/Register";
 import "./Hero.scss";
 import photo from "../../assets/images/Mobiles2 1 (1).png";
-import img from "../../assets/images/Globe.png";
-import country from "../../assets/images/British Virgin.png";
-import { ThirdSlider } from "../sliders/Swiper";
-import data from "../../data/data.json";
 
 const Body = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -84,10 +80,10 @@ const Body = () => {
                     </div>
                   ))}
                 </div>
-                  <div className="d-flex justify-content-center justify-content-md-start flex-row flex-nowrap pb-5">
-                    <button>App Store</button>
-                    <button>Play Store</button>
-                  </div>
+                <div className="d-flex justify-content-center justify-content-md-start flex-row flex-nowrap pb-5">
+                  <button>App Store</button>
+                  <button>Play Store</button>
+                </div>
               </div>
               <div className="col-12 col-md-6 m-auto  p-0 ">
                 <img src={photo} alt="phoneBackground" className="img-fluid" />

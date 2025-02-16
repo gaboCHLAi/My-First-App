@@ -2,7 +2,7 @@ import React from "react";
 import Swiper, { SecondSlider } from "../../components/sliders/Swiper";
 import "./Footer.scss";
 import data from "../../data/data.json";
-import PopUp from "../../components/popup/PopUp";
+import PopUp from "../popup/Register";
 import { Grid } from "swiper";
 import cup from "../../assets/images/Awards_Icon.png";
 const Footer = () => {
@@ -58,7 +58,6 @@ const Footer = () => {
                 textAlign: "center",
                 fontSize: "18px",
                 color: "#ffffff",
-                
               }}
             >
               Multiple Award - Winning Broker
@@ -152,9 +151,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-          <div className="text-center  ">
-            <PopUp buttonText="Trade Futures Now" />
-          </div>
+        <div className="text-center  ">
+          <PopUp buttonText="Trade Futures Now" />
+        </div>
       </div>
     </footer>
   );
