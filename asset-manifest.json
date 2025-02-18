@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/My-First-App/static/css/main.688c7be5.css",
+    "main.js": "/My-First-App/static/js/main.d5961d85.js",
+    "static/media/main.png": "/My-First-App/static/media/main.5e66ab82c1bcd169e75d.png",
+    "static/media/Block1_bg 1.png": "/My-First-App/static/media/Block1_bg 1.028724f6f3a2fd35deb2.png",
+    "static/media/Image_mobile 1.png": "/My-First-App/static/media/Image_mobile 1.a6bf92a544946fcf7057.png",
+    "static/media/Mobiles2 1 (1).png": "/My-First-App/static/media/Mobiles2 1 (1).3be7c05e7bf45ae0e5dc.png",
+    "static/media/heaven.png": "/My-First-App/static/media/heaven.244ff4be7ad5b3f568ad.png",
+    "static/media/Bg.jpg": "/My-First-App/static/media/Bg.9ba313471ffadba75a6f.jpg",
+    "static/media/Globe.png": "/My-First-App/static/media/Globe.a70c11edaf59ea4720c8.png",
+    "static/media/A.png": "/My-First-App/static/media/A.8803ce5b0e681d276530.png",
+    "index.html": "/My-First-App/index.html",
+    "main.688c7be5.css.map": "/My-First-App/static/css/main.688c7be5.css.map",
+    "main.d5961d85.js.map": "/My-First-App/static/js/main.d5961d85.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.688c7be5.css",
+    "static/js/main.d5961d85.js"
+  ]
+}
